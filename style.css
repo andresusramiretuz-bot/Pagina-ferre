@@ -1,1 +1,181 @@
+/*----- ENCABEZADO -----*/
+.header{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+/*--TITULO--*/
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/*-MENU-*/
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px; /*espacio entre items*/
+    flex-wrap: wrap; /*permite que los iconos salten de linea si es necesario*/
+}
+.menu a{
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Boton destacado */
+.btn-promos {
+    background: #4a9aff;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+/*responsive moviles pequeños */ 
+@media(max-width: 600px){
+    .menu{
+        justify-content: center; /*centra el menu en celulares*/
+        gap: 15px;
+    }
+    .menu a {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+}
+
+/*Responsive:Pantallas muy chicas*/
+@media(max-width:420px){
+    .menu{
+        flex-direction: column; /*cambia el menu a vertical*/
+        gap: 10px;
+    }
+    .menu a{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/*----BANNER---*/
+.banner{
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Imagen del Banner */
+.banner img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+/* Texto encima del Banner */
+.banner-texto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner-texto h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.banner-texto p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/*----TITULO DE SECCION---*/
+.titulo-seccion{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----GRID CATEGORIAS---*/
+.grid-categorias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/*---TARJETAS DE CATEGORIA---*/
+.categoria-card{
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    transition: 0.2s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.categoria-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.icono{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.categoria-card h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.categoria-card p{
+    font-size: 15px;
+    color:#555;
+}
+
+/*---SECCION FINAL ---*/
+.contacto-final{
+    text-align: center;
+    margin: 40px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BOTON */
+.btn-contacto{
+    display: inline-block;
+    background: #4a9aff;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.btn-contacto:hover{
+    transform: translateY(-3px);
+    background: #3a82e0;
+}
