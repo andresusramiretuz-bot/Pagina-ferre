@@ -152,7 +152,7 @@
 
 .categoria-card p{
     font-size: 15px;
-    color:#555;
+    color:#fff;
 }
 
 /*---SECCION FINAL ---*/
@@ -226,7 +226,7 @@
 
 .link{
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 .electricidad{
@@ -256,3 +256,4 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
