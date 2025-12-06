@@ -226,4 +226,33 @@
 
 .link{
     text-decoration: none;
+    color: black;
+}
+
+.electricidad{
+    background-image: url(electricidad-nhdelg2l6ezb69jq961lmmwjwhshsor0oah2pz8lg4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.herramienta{
+    background-image: url(Uso-y-cuidado-de-tus-herramientas-de-ferreteria-industrial.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pintura{
+    background-image: url(images.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plomeria{
+    background-image: url(images\ \(1\).jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
