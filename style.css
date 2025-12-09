@@ -24,7 +24,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 25px; /*espacio entre items*/
+    gap: 5px; /*espacio entre items*/
     flex-wrap: wrap; /*permite que los iconos salten de linea si es necesario*/
 }
 .menu a{
@@ -35,6 +35,25 @@
     font-weight: 500;
 }
 
+.menu a:hover{
+    background: #0e2b4d;
+    padding: 7px;
+    border-radius: 12px;
+    color: #fff;
+    transform: translate(-2px);
+}
+
+.menu a:active{
+    background: #0077ff;
+    color: #fff;
+    transform: scale(0.97);
+}
+
+.menu .btn-promos:hover{
+    background: #ff3b3b;
+    color:#fff;
+    padding: 10px;
+}
 /* Boton destacado */
 .btn-promos {
     background: #4a9aff;
@@ -84,9 +103,10 @@
     height: 280px;
     object-fit: cover;
     filter: brightness(70%);
+    
 }
 
-/* Texto encima del Banner */
+/* Texto encima del Banner*/ 
 .banner-texto{
     position: absolute;
     top: 50%;
@@ -95,6 +115,7 @@
     text-align: center;
     color: #fff;
 }
+
 
 .banner-texto h2{
     font-size: 32px;
@@ -226,7 +247,7 @@
 
 .link{
     text-decoration: none;
-    color: #fff;
+    color: whitesmoke;
 }
 
 .electricidad{
@@ -256,4 +277,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
+
 
