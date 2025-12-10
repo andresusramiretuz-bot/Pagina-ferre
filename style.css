@@ -103,9 +103,6 @@
     height: 280px;
     object-fit: cover;
     filter: brightness(70%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 /* Texto encima del Banner*/ 
@@ -294,3 +291,4 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgb(0,0,0,0.15);
 }
+
